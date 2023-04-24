@@ -1,0 +1,290 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+    min-height: 100vh;
+    background: url(images/back3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CONTENT */
+
+.wrapper {
+    display: grid;
+    min-height: 100vh;
+    width: min(90%, 1500px);
+    display: grid;
+    grid-template-rows: 100px auto 130px;
+}
+
+.wrapper > div {
+
+}
+
+#content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* NAVBAR */
+
+
+.nav {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: 0px 20px;
+    width: 90%;
+}
+
+.nav > div {
+
+}
+
+.options {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* gap: 120px; */
+}
+
+.logo i {
+    font-size: 2.3rem;
+}
+
+.nav > div p {
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.opt1 {
+    margin-left: 90px;
+    margin-right: 60px;
+}
+
+.opt2 {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.opt3 {
+    margin-left: 60px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.search i {
+    font-size: 1.6rem;
+    color: white;
+}
+
+
+/* MAIN */
+
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    padding: 0 0 0 20px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.main > div {
+}
+
+.main-text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.status p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: rgb(129, 34, 34);
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+}
+
+.heading h2 {
+    font-size: 4.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.description p, .description2 p {
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(40, 39, 39);
+    line-height: 35px;
+    white-space: nowrap;
+    margin-bottom: 30px;
+}
+
+.description2 {
+    display: none;
+}
+
+.order-button button {
+    width: 220px;
+    height: 63px;
+    border-radius: 30px;
+    background-color: black;
+    border: none;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+.main-food {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.salad {
+    width: 480px;
+    transform: translateX(10%); 
+}
+
+.olive {
+    position: absolute;
+    width: 150px;
+    top: 0%;
+    left: 0%;
+}
+
+.tomato {
+    width: 80px;
+    align-self: flex-start;
+}
+
+.sushi-main, .nuts-main {
+    display: none;
+}
+
+
+/* FOOTER */
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    overflow: hidden;
+}
+
+.footer > div {
+}
+
+.sushi-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sushi {
+    width: 130px;
+    margin-left: 50px;
+    transform: rotate(15deg);
+    align-self: flex-end;
+}
+
+.leaves-image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leafe {
+    align-self: flex-end;
+    justify-self: flex-end;
+    width: 100px;
+    transform: translateX(-180%);
+}
+
+.leafe2 {
+    width: 90px;
+    align-self: flex-end;
+    justify-self: flex-end;
+    transform: translateX(-130%);
+}
+
+.nuts {
+    width: 110px;
+    height: 110px;
+    transform: translateX(-30%);
+}
+
+

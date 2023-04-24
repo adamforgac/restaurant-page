@@ -1,0 +1,447 @@
+@media only screen and (min-width: 1500px) {
+    .salad {
+        width: 700px;
+    }
+}
+
+@media only screen and (min-height: 1220px) {
+    .wrapper {
+        grid-template-rows: 100px min-content 230px;
+        align-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 1224px) {
+    .salad {
+        width: 400px;
+        transform: translateX(10%); 
+    }
+}
+
+@media only screen and (max-width: 1130px) {
+    .salad {
+        width: 350px;
+        transform: translateX(10%); 
+    }
+
+    .heading h2 {
+        font-size: 2.5rem;
+    }
+
+    .description p {
+        font-size: 1.1rem;
+        line-height: 30px;
+    }
+
+    .wrapper {
+        width: 100%;
+        padding: 0 0 0 30px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .heading h2 {
+        font-size: 3rem;
+    }
+
+    .description p {
+        font-size: 1.4rem;
+        line-height: 30px;
+    }
+
+    .wrapper {
+        width: 100%;
+        padding: 0 0 0 30px;
+    }
+
+    .sushi {
+        width: 90px;
+        margin-left: 50px;
+        transform: rotate(15deg);
+        align-self: flex-end;
+    }
+
+    .main {
+        grid-template-columns: 1fr 1.4fr;
+    }
+
+
+    .nav > div p {
+        font-size: 1.3rem;
+    }
+
+    .olive {
+        width: 100px;
+    }
+    
+    .tomato {
+        width: 50px;
+    }
+
+    .leafe {
+        width: 70px;
+    }
+    
+    .leafe2 {
+        width: 60px;
+    }
+
+    .nuts {
+        width: 80px;
+        height: 80px;
+    }
+
+    .order-button button {
+        width: 180px;
+        height: 55px;
+        font-size: 0.9rem;
+    }
+
+    .opt1 {
+        margin-left: 90px;
+        margin-right: 60px;
+    }
+    
+    .opt2 {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    
+    .opt3 {
+        margin-left: 60px;
+    }
+
+    .main-food {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .salad {
+        width: 390px;
+        transform: translate(0%);
+    }
+
+    .olive, .tomato, .leafe, .leafe2, .sushi-main, .nuts-main {
+        position: absolute;
+    }
+
+    body {
+        background-position: 60% 50%;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .sushi {
+        width: 70px;
+        margin-left: 50px;
+        transform: rotate(15deg);
+        align-self: flex-end;
+    }
+
+    .opt1 {
+        margin-left: 60px;
+        margin-right: 30px;
+    }
+    
+    .opt2 {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    .opt3 {
+        margin-left: 30px;
+    }
+
+    .olive {
+        width: 100px;
+    }
+
+    .description {
+        display: none;
+    }
+
+    .description2 {
+        display: unset;
+    }
+
+    .description2 p {
+        font-size: 1rem;
+        line-height: 25px;
+    }
+
+    .main {
+        overflow-x: visible;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .main-food {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .salad {
+        width: 300px;
+        transform: translateX(0%); 
+    }
+
+    .heading h2 {
+        font-size: 2.1rem;
+    }
+
+    .description p {
+        font-size: 0.9rem;
+        line-height: 30px;
+    }
+
+    .order-button button {
+        width: 160px;
+        height: 50px;
+        font-size: 0.7rem;
+    }
+
+    .main {
+        overflow: hidden;
+        padding: 0 0 20px 20px;
+    }
+
+    body {
+        background-position: 47% 50%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 0 30px;
+        margin: 0;
+        overflow: visible;
+    } 
+
+    .wrapper {
+        padding: 0 10px;
+    }
+
+    body {
+        background-position: 59% 50%;
+    }
+
+    .main-text {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .description2 p {
+        font-size: 1.15rem;
+        line-height: 30px;
+    }
+
+
+    .heading h2 {
+        font-size: 3.5rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+    }
+
+    .main-text {
+        margin-top: 20px;
+    }
+
+    .order-button button {
+        width: 180px;
+        height: 55px;
+        font-size: 0.9rem;
+    }
+
+    .opt1 {
+        margin-left: 50px;
+        margin-right: 30px;
+    }
+    
+    .opt2 {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    .opt3 {
+        margin-left: 30px;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .wrapper {
+        grid-template-rows: 100px auto;
+    }
+
+    .salad {
+        width: 350px;
+        transform: translateX(0%); 
+        padding: 0;
+    }
+
+    .main-food {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        padding: 0;
+    }
+
+    .olive, .tomato, .leafe, .leafe2, .sushi-main, .nuts-main {
+        position: absolute;
+    }
+
+    .sushi-main, .nuts-main {
+        display: unset;
+    }
+
+    .sushi-main {
+        width: 100px;
+        transform: rotate(270deg);
+        left: 89%;
+        top: -20%;
+    }
+
+    .leafe {
+        left: 50%;
+    }
+
+    .tomato {
+        left: 10%;
+        top: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+    body {
+        background-position: 53% 50%;
+    }
+
+    .search i {
+        display: none;
+    }
+
+    .opt1 {
+        margin-left: 50px;
+        margin-right: 20px;
+    }
+    
+    .opt2 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .opt3 {
+        margin-left: 20px;
+    }
+
+    .nav > div p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .description2 p {
+        font-size: 1rem;
+        line-height: 30px;
+    }
+
+
+    .heading h2 {
+        font-size: 2.8rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+    }
+
+    .order-button button {
+        width: 150px;
+        height: 50px;
+        font-size: 0.7rem;
+    }
+
+    .salad {
+        width: 270px;
+
+        padding: 0;
+    }
+
+    .sushi-main {
+        display: none;
+    }
+
+    .leafe {
+        left: 50%;
+        width: 50px;
+    }
+
+    .leafe2 {
+        width: 50px;
+    }
+
+    .olive {
+        width: 70px;
+    }
+
+    .tomato {
+        left: -10%;
+        top: 50%;
+        width: 40px;
+    }
+
+    body {
+        background-position: 55% 50%;
+    }
+
+    .status p {
+        font-size: 1rem;
+    }
+
+    .logo i {
+        font-size: 1.5rem;
+    }
+
+    .opt1 {
+        margin-left: 30px;
+        margin-right: 10px;
+    }
+    
+    .opt2 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .opt3 {
+        margin-left: 10px;
+    }
+
+    .nav > div p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .description2 p {
+        font-size: 0.8rem;
+        line-height: 23px;
+    }
+
+
+    .heading h2 {
+        font-size: 2.3rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+    }
+
+    .salad {
+        width: 240px;
+    }
+}
