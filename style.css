@@ -1,290 +1,490 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+    v2.0 | 20110126
+    License: none (public domain)
+ */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
+ html, body, div, span, applet, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ a, abbr, acronym, address, big, cite, code,
+ del, dfn, em, img, ins, kbd, q, s, samp,
+ small, strike, strong, sub, sup, tt, var,
+ b, u, i, center,
+ dl, dt, dd, ol, ul, li,
+ fieldset, form, label, legend,
+ table, caption, tbody, tfoot, thead, tr, th, td,
+ article, aside, canvas, details, embed, 
+ figure, figcaption, footer, header, hgroup, 
+ menu, nav, output, ruby, section, summary,
+ time, mark, audio, video {
+ 	margin: 0;
+ 	padding: 0;
+ 	border: 0;
+ 	font-size: 100%;
+ 	font: inherit;
+ 	vertical-align: baseline;
+ }
 
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+ article, aside, details, figcaption, figure, 
+ footer, header, hgroup, menu, nav, section {
+ 	display: block;
+ }
 
-body {
-	line-height: 1;
+ body {
+ 	line-height: 1;
     min-height: 100vh;
+    background-color: #181719;
+ }
+
+ ol, ul {
+ 	list-style: none;
+ }
+
+ blockquote, q {
+ 	quotes: none;
+ }
+
+ blockquote:before, blockquote:after,
+ q:before, q:after {
+ 	content: '';
+ 	content: none;
+ }
+
+ table {
+ 	border-collapse: collapse;
+ 	border-spacing: 0;
+ }
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ /* CONTENT */
+
+ .wrapper {
+    display: grid;
+    min-height: 100vh;
+    width: min(100%, 1500px);
+    padding: 0 40px;
+    display: grid;
+    grid-template-rows: 100px auto 130px;
     background: url(images/back3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
+ }
 
-ol, ul {
-	list-style: none;
-}
+ .wrapper > div {
 
-blockquote, q {
-	quotes: none;
-}
+ }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* CONTENT */
-
-.wrapper {
-    display: grid;
-    min-height: 100vh;
-    width: min(90%, 1500px);
-    display: grid;
-    grid-template-rows: 100px auto 130px;
-}
-
-.wrapper > div {
-
-}
-
-#content {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+ #content {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
 
 
-/* NAVBAR */
+ /* NAVBAR */
 
 
-.nav {
+ .nav {
     display: grid;
     grid-template-columns: 4fr 1fr;
     padding: 0px 20px;
     width: 90%;
-}
+ }
 
-.nav > div {
+ .nav > div {
 
-}
+ }
 
-.options {
-    display: flex;
-    justify-content: flex-start;
+ .options {
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+ }
+
+ .logo i {
+     font-size: 2.3rem;
+ }
+
+ .nav > div p {
+     font-size: 1.4rem;
+     font-family: 'Roboto', sans-serif;
+     font-weight: 300;
+ }
+
+ .opt1 {
+     margin-left: 90px;
+     margin-right: 60px;
+ }
+
+ .opt2 {
+     margin-left: 60px;
+     margin-right: 60px;
+ }
+
+ .opt3 {
+     margin-left: 60px;
+ }
+
+ .search {
+     display: flex;
+     align-items: center;
+     justify-content: flex-end;
+ }
+
+ .search i {
+     font-size: 1.6rem;
+     color: white;
+ }
+
+
+ /* MAIN */
+
+
+ .main {
+     display: grid;
+     grid-template-columns: 1fr 1.5fr;
+     padding: 0 0 0 20px;
+     width: 100%;
+     overflow-x: hidden;
+ }
+
+ .main > div {
+ }
+
+ .main-text {
+     display: flex;
+     align-items: flex-start;
+     justify-content: center;
+     flex-direction: column;
+ }
+
+ .status p {
+     font-family: 'Roboto', sans-serif;
+     font-weight: 700;
+     font-size: 1.3rem;
+     color: rgb(129, 34, 34);
+     letter-spacing: 4px;
+     margin-bottom: 30px;
+ }
+
+ .heading h2 {
+     font-size: 4.2rem;
+     font-family: 'Roboto', sans-serif;
+     font-weight: 500;
+     margin-bottom: 30px;
+ }
+
+ .description p, .description2 p {
+     font-size: 1.3rem;
+     font-family: 'Roboto', sans-serif;
+     color: rgb(40, 39, 39);
+     line-height: 35px;
+     white-space: nowrap;
+     margin-bottom: 30px;
+ }
+
+ .description2 {
+     display: none;
+ }
+
+ .order-button button {
+     width: 220px;
+     height: 63px;
+     border-radius: 30px;
+     background-color: black;
+     border: none;
+     color: white;
+     font-family: 'Kanit', sans-serif;
+     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+     margin-top: 20px;
+     font-size: 1.1rem;
+ }
+
+ .main-food {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+ }
+
+ .salad {
+     width: 480px;
+     transform: translateX(10%); 
+ }
+
+ .olive {
+     position: absolute;
+     width: 150px;
+     top: 0%;
+     left: 0%;
+ }
+
+ .tomato {
+     width: 80px;
+     align-self: flex-start;
+ }
+
+ .sushi-main, .nuts-main {
+     display: none;
+ }
+
+
+ /* FOOTER */
+
+
+ .footer {
+     display: grid;
+     grid-template-columns: 2fr 2fr;
+     overflow: hidden;
+ }
+
+ .footer > div {
+ }
+
+ .sushi-image {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .sushi {
+     width: 130px;
+     margin-left: 50px;
+     transform: rotate(15deg);
+     align-self: flex-end;
+ }
+
+ .leaves-image {
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .leafe {
+     align-self: flex-end;
+     justify-self: flex-end;
+     width: 100px;
+     transform: translateX(-180%);
+ }
+
+ .leafe2 {
+     width: 90px;
+     align-self: flex-end;
+     justify-self: flex-end;
+     transform: translateX(-130%);
+ }
+
+ .nuts {
+     width: 110px;
+     height: 110px;
+     transform: translateX(-30%);
+ }
+
+
+/* MENU */
+/* MENU */
+/* MENU */
+
+
+.menu-wrapper {
+    display: grid;
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 100px auto;
+    row-gap: 30px;
+    grid-template-columns: 1fr;
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(images/salad-in-dark.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     align-items: center;
-    /* gap: 120px; */
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: 0px 20px;
+    padding: 0 8%;
 }
 
 .logo i {
     font-size: 2.3rem;
 }
 
-.nav > div p {
+.nav-menu i, .nav-menu p {
+    color: white;
+}
+
+.nav-menu > div p {
     font-size: 1.4rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
 
-.opt1 {
-    margin-left: 90px;
-    margin-right: 60px;
+.menu-list {
+    display: grid;
+    width: clamp(480px, 40%, 500px);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    height: clamp(300px, 100%, 550px);
+    padding: 0 0 40px 8%;
 }
 
-.opt2 {
-    margin-left: 60px;
-    margin-right: 60px;
+.menu-list > div {
+    border-bottom: 2px solid white;
+    display: grid;
+    grid-auto-rows: 1fr 1.5fr;
+    padding: 30px 0;
 }
 
-.opt3 {
-    margin-left: 60px;
+.offer1 {
+    padding: 0px 0;
 }
 
-.search {
+.offer1-heading, .offer1-text, .offer2-heading, .offer2-text, .offer3-heading, .offer3-text {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: flex-end;
 }
 
-.search i {
-    font-size: 1.6rem;
+.menu-list > div > div p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 23px;
+    font-style: italic;
+}
+
+.menu-list > div > div h2 {
+    color: white;
+    font-family: 'Noto Serif', serif;
+    font-size: 2rem;
+    padding: 0 0 10px 0;
+}
+
+.offer1-text-mobile, .offer2-text-mobile, .offer3-text-mobile {
+    display: none;
+}
+
+
+/* ABOUT */
+/* ABOUT */
+/* ABOUT */
+
+
+.about-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto;
+    min-height: 100vh;
+    width: 100%;
+    justify-items: center;
+}
+
+.nav-about {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: 0px 20px;
+    padding: 0 8%;
+    width: 100%;
+    height: 100px;
+    background: black;
+}
+
+.logo i {
+    font-size: 2.3rem;
+}
+
+.nav-about i, .nav-about p {
     color: white;
 }
 
+.nav-about p {
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
 
-/* MAIN */
-
-
-.main {
+.about-body {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    padding: 0 0 0 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-content {
+    display: grid;
+    grid-template-rows: 1fr 1.13fr;
+    width: clamp(400px, 90%, 1400px);
+    gap: 60px;
+    padding-top: 30px;
+}
+
+.about-photo img {
     width: 100%;
-    overflow-x: hidden;
+    height: 100%;
 }
 
-.main > div {
-}
-
-.main-text {
-    display: flex;
-    align-items: flex-start;
+.about-heading {
+    display: grid;
     justify-content: center;
+    align-content: end;
+    text-align: center;
+    gap: 30px;
+}
+
+.section-heading h2 {
+    color: white;
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+.heading-name h1 {
+    color: white;
+    font-size: 4rem;
+    font-family: 'Great Vibes', cursive;
+}
+
+.about-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
     flex-direction: column;
 }
 
-.status p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 1.3rem;
-    color: rgb(129, 34, 34);
-    letter-spacing: 4px;
-    margin-bottom: 30px;
-}
-
-.heading h2 {
-    font-size: 4.2rem;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    margin-bottom: 30px;
-}
-
-.description p, .description2 p {
-    font-size: 1.3rem;
-    font-family: 'Roboto', sans-serif;
-    color: rgb(40, 39, 39);
-    line-height: 35px;
-    white-space: nowrap;
-    margin-bottom: 30px;
-}
-
-.description2 {
-    display: none;
-}
-
-.order-button button {
-    width: 220px;
-    height: 63px;
-    border-radius: 30px;
-    background-color: black;
-    border: none;
+.about-button button {
+    width: 183px;
+    height: 49px;
+    background-color: transparent;
+    border: 2px solid white;
     color: white;
-    font-family: 'Kanit', sans-serif;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    margin-top: 20px;
-    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 3px;
 }
 
-.main-food {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+.about-par p {
+    line-height: 30px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
 }
 
-.salad {
-    width: 480px;
-    transform: translateX(10%); 
-}
-
-.olive {
-    position: absolute;
-    width: 150px;
-    top: 0%;
-    left: 0%;
-}
-
-.tomato {
-    width: 80px;
-    align-self: flex-start;
-}
-
-.sushi-main, .nuts-main {
-    display: none;
+.about-par {
+    width: clamp(500px, 50%, 700px);
+    margin-bottom: 30px;
+    font-size: 1.3rem;
 }
 
 
-/* FOOTER */
-
-
-.footer {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    overflow: hidden;
-}
-
-.footer > div {
-}
-
-.sushi-image {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.sushi {
-    width: 130px;
-    margin-left: 50px;
-    transform: rotate(15deg);
-    align-self: flex-end;
-}
-
-.leaves-image {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.leafe {
-    align-self: flex-end;
-    justify-self: flex-end;
-    width: 100px;
-    transform: translateX(-180%);
-}
-
-.leafe2 {
-    width: 90px;
-    align-self: flex-end;
-    justify-self: flex-end;
-    transform: translateX(-130%);
-}
-
-.nuts {
-    width: 110px;
-    height: 110px;
-    transform: translateX(-30%);
-}
 
 
