@@ -66,7 +66,7 @@
     }
 
 
-    .nav > div p {
+    .nav > div p, .nav-menu > div p, .nav-about > div p {
         font-size: 1.3rem;
     }
 
@@ -299,7 +299,7 @@
         position: absolute;
     }
 
-    .sushi-main, .nuts-main {
+    .sushi-main{
         display: unset;
     }
 
@@ -344,7 +344,7 @@
         margin-left: 20px;
     }
 
-    .nav > div p {
+    .nav > div p, .nav-menu > div p, .nav-about > div p {
         font-size: 1rem;
     }
 }
@@ -409,22 +409,15 @@
         font-size: 1.5rem;
     }
 
-    .opt1 {
-        margin-left: 30px;
-        margin-right: 10px;
-    }
-    
-    .opt2 {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    
-    .opt3 {
-        margin-left: 10px;
+    .nav > div p, .nav-menu > div p, .nav-about > div p {
+        font-size: 1rem;
     }
 
-    .nav > div p {
-        font-size: 1rem;
+    .nav-about, .nav, .nav-menu {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
     }
 }
 
@@ -445,3 +438,139 @@
         width: 240px;
     }
 }
+
+
+/* MENU */
+/* MENU */
+/* MENU */
+
+
+@media only screen and (max-width: 500px) {
+    .menu-list {
+        width: 90%;
+        height: 100%;
+        /* padding: 0 0px 40px 20px; */
+    }
+
+    .menu-list > div > div p {
+        font-size: 0.9rem;
+        line-height: 23px;
+        font-style: italic;
+    }
+    
+    .menu-list > div > div h2 {
+        color: white;
+        font-family: 'Noto Serif', serif;
+        font-size: 1.6rem;
+        padding: 0 0 10px 0;
+    }
+
+    .offer1-text-mobile, .offer2-text-mobile, .offer3-text-mobile {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0; 
+    }
+
+    .offer1-text, .offer2-text, .offer3-text {
+        display: none;
+    }
+}
+
+
+/* ABOUT  */
+/* ABOUT  */
+/* ABOUT  */
+
+
+
+@media only screen and (max-width: 1150px) {
+    .about-par {
+        width: clamp(350px, 50%, 700px);
+        margin-bottom: 30px;
+        font-size: 1.2rem;
+    }
+
+    .section-heading h2 {
+        color: white;
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 200;
+    }
+
+    .heading-name h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .about-body {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    } 
+
+    .about-content {
+        width: 100%;
+        gap: 60px;
+        padding: 30px 0;
+    }
+
+    .about-par {
+        width: clamp(500px, 50%, 1200px);
+        margin-bottom: 30px;
+        font-size: 1.5rem;
+    }
+
+    .section-heading h2 {
+        color: white;
+        font-size: 1.9rem;
+        letter-spacing: 3px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 200;
+    }
+
+    .heading-name h1 {
+        font-size: 4.5rem;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .about-par {
+        width: clamp(350px, 50%, 1200px);
+        font-size: 1.2rem;
+    }
+
+    .section-heading h2 {
+        font-size: 1.5rem;
+    }
+
+    .heading-name h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .about-par {
+        width: clamp(280px, 80%, 1200px);
+        margin-bottom: 30px;
+        font-size: 1.2rem;
+    }
+
+    .about-content {
+        padding-top: 0px;
+    }
+
+    .section-heading h2 {
+        color: white;
+        font-size: 1.1rem;
+        letter-spacing: 3px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 200;
+    }
+
+    .heading-name h1 {
+        font-size: 2.8rem;
+    }
+}
+
