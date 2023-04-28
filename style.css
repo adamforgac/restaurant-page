@@ -92,6 +92,7 @@
     height: 100%;
     width: 100%;
     border-bottom: none;
+    position: relative;
  }
 
  .nav > div {
@@ -114,21 +115,36 @@
      font-weight: 300;
  }
 
- .opt1 {
-     margin-left: 90px;
-     margin-right: 60px;
- }
+.opt1 {
+    margin-left: 90px;
+    margin-right: 60px;
+}
 
- .opt2 {
-     margin-left: 60px;
-     margin-right: 60px;
- }
+.opt2 {
+    margin-left: 60px;
+    margin-right: 60px;
+}
 
- .opt3 {
-     margin-left: 60px;
- }
+.opt3 {
+    margin-left: 60px;
+}
 
- .search {
+.options div.active {
+    border-bottom: 2px solid black;
+}
+
+.marker {
+    position: absolute;
+    height: 2px;
+    left: 0;
+    width: 0;
+    background: white;
+    bottom: 25px;
+    transition: 0.5s;
+    border-radius: 4px;
+}
+
+.search {
      display: flex;
      align-items: center;
      justify-content: flex-end;
