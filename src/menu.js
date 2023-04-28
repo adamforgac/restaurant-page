@@ -1,6 +1,11 @@
 function createMenu() {
     const content = document.querySelector("#content");
-    addDiv(content, "menu-wrapper");
+    content.style.background = "linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(images/salad-in-dark.jpg)"
+    content.style.backgroundRepeat = "no-repeat";
+    content.style.backgroundSize = "cover";
+    content.style.backgroundPosition = "center";
+    content.style["align-items"] = "center";
+
 
     function addDiv(newParent, newClass) {
         const div = document.createElement("div");
@@ -13,46 +18,15 @@ function createMenu() {
         parent.appendChild(newElement);
     }
 
-    const wrapperMenu = document.querySelector(".menu-wrapper");
-    addDiv(wrapperMenu, "nav-menu");
-    addDiv(wrapperMenu, "menu-list");
+    const restPage = document.querySelector(".rest-page");
 
-    const navMenu = document.querySelector(".nav-menu");
+    document.querySelector(".fa-solid").style.color = "white";
+    document.querySelector(".opt1 p").style.color = "white";
+    document.querySelector(".opt2 p").style.color = "white";
+    document.querySelector(".opt3 p").style.color = "white";
+
+    addDiv(restPage, "menu-list");
     const main = document.querySelector(".menu-list");
-    console.log(main);
-    addDiv(navMenu, "options");
-    addDiv(navMenu, "search");
-
-    const options = document.querySelector(".options");
-    const search = document.querySelector(".search");
-
-    addDiv(options, "logo");
-    addDiv(options, "opt1");
-    addDiv(options, "opt2");
-    addDiv(options, "opt3");
-
-    const logo = document.querySelector(".logo");
-    const opt1 = document.querySelector(".opt1");
-    const opt2 = document.querySelector(".opt2");
-    const opt3 = document.querySelector(".opt3");
-
-    logo.appendChild(document.createElement("i"));
-    logo.querySelector("i").classList.add("fa-solid");
-    logo.querySelector("i").classList.add("fa-bowl-food");
-    opt1.appendChild(document.createElement("p"));
-    opt2.appendChild(document.createElement("p"));
-    opt3.appendChild(document.createElement("p"));
-
-    opt1.querySelector("p").textContent = "Home";
-    opt2.querySelector("p").textContent = "Menu";
-    opt3.querySelector("p").textContent = "About";
-
-    addDiv(search, "search-icon");
-
-    const searchIcon = document.querySelector(".search-icon");
-    searchIcon.appendChild(document.createElement("i"));
-    searchIcon.querySelector("i").classList.add("fa-solid");
-    searchIcon.querySelector("i").classList.add("fa-magnifying-glass");
 
     addDiv(main, "offer1");
     addDiv(main, "offer2");
@@ -90,13 +64,14 @@ function createMenu() {
     addText("h2", "Crunchy Ribbon Salad", offerTwoHeading);
     addText("h2", "Quinoa Lentil Salad", offerThreeHeading);
 
-    addText("p", "Lorem ipsum dolor sit amet, consectetuer adipiscing<br>elit. Phasellus et lorem id felis nonummy placerat.", offerOneText);
-    addText("p", "Lorem ipsum dolor sit amet, consectetuer adipiscing<br>elit. Phasellus et lorem id felis nonummy placerat.", offerTwoText);
-    addText("p", "Lorem ipsum dolor sit amet, consectetuer adipiscing<br>elit. Phasellus et lorem id felis nonummy placerat.", offerThreeText);
+    addText("p", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus et lorem id felis nonummy placerat.", offerOneText);
+    addText("p", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus et lorem id felis nonummy placerat.", offerTwoText);
+    addText("p", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus et lorem id felis nonummy placerat.", offerThreeText);
 
-    addText("p", "Lorem ipsum dolor sit amet, consectetuer adipiscing<br>elit. Phasellus et lorem id felis nonummy placerat.", offerOneTextMob);
-    addText("p", "Lorem ipsum dolor sit amet, consectetuer adipiscing<br>elit. Phasellus et lorem id felis nonummy placerat.", offerTwoTextMob);
-    addText("p", "Lorem ipsum dolor sit amet, consectetuer adipiscing<br>elit. Phasellus et lorem id felis nonummy placerat.", offerThreeTextMob);
+    addText("p", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus et lorem id felis nonummy placerat.", offerOneTextMob);
+    addText("p", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus et lorem id felis nonummy placerat.", offerTwoTextMob);
+    addText("p", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus et lorem id felis nonummy placerat.", offerThreeTextMob);
 }
+
 
 export default createMenu;
