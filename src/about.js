@@ -1,6 +1,13 @@
 function createAbout() {
     const content = document.querySelector("#content");
-    addDiv(content, "about-wrapper");
+    content.style.background = "#181719";
+    content.style.backgroundRepeat = "no-repeat";
+    content.style.backgroundSize = "cover";
+    content.style.backgroundPosition = "center";
+    content.style["align-items"] = "center";
+
+    const nav = document.querySelector(".nav");
+    nav.style.borderBottom = "1px solid white";
 
     function addDiv(newParent, newClass) {
         const div = document.createElement("div");
@@ -19,45 +26,15 @@ function createAbout() {
         parent.appendChild(newElement);
     }
 
-    const wrapperMenu = document.querySelector(".about-wrapper");
-    addDiv(wrapperMenu, "nav-about");
-    addDiv(wrapperMenu, "about-body");
+    const restPage = document.querySelector(".rest-page");
 
-    const navAbout = document.querySelector(".nav-about");
+    document.querySelector(".fa-solid").style.color = "white";
+    document.querySelector(".opt1 p").style.color = "white";
+    document.querySelector(".opt2 p").style.color = "white";
+    document.querySelector(".opt3 p").style.color = "white";
+
+    addDiv(restPage, "about-body");
     const main = document.querySelector(".about-body");
-    addDiv(navAbout, "options");
-    addDiv(navAbout, "search");
-
-    const options = document.querySelector(".options");
-    const search = document.querySelector(".search");
-
-    addDiv(options, "logo");
-    addDiv(options, "opt1");
-    addDiv(options, "opt2");
-    addDiv(options, "opt3");
-
-    const logo = document.querySelector(".logo");
-    const opt1 = document.querySelector(".opt1");
-    const opt2 = document.querySelector(".opt2");
-    const opt3 = document.querySelector(".opt3");
-
-    logo.appendChild(document.createElement("i"));
-    logo.querySelector("i").classList.add("fa-solid");
-    logo.querySelector("i").classList.add("fa-bowl-food");
-    opt1.appendChild(document.createElement("p"));
-    opt2.appendChild(document.createElement("p"));
-    opt3.appendChild(document.createElement("p"));
-
-    opt1.querySelector("p").textContent = "Home";
-    opt2.querySelector("p").textContent = "Menu";
-    opt3.querySelector("p").textContent = "About";
-
-    addDiv(search, "search-icon");
-
-    const searchIcon = document.querySelector(".search-icon");
-    searchIcon.appendChild(document.createElement("i"));
-    searchIcon.querySelector("i").classList.add("fa-solid");
-    searchIcon.querySelector("i").classList.add("fa-magnifying-glass");
 
     addDiv(main, "about-content");
     addDiv(main, "about-photo");

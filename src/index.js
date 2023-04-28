@@ -27,7 +27,7 @@ menu.addEventListener("click", () => {
 })
 
 about.addEventListener("click", () => {
-    content.innerHTML = "";
+    restPage.innerHTML = "";
     createAbout();
     console.log("works")
 })

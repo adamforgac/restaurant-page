@@ -6,6 +6,8 @@ function createHome() {
     content.style.backgroundSize = "cover";
     content.style.backgroundPosition = "center";
     content.style["align-items"] = "normal";
+    const nav = document.querySelector(".nav");
+    nav.style.borderBottom = "none";
 
     function addDiv(newParent, newClass) {
         const div = document.createElement("div");
