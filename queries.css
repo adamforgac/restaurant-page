@@ -49,8 +49,7 @@
         line-height: 30px;
     }
 
-    .wrapper {
-        width: 100%;
+    #content {
         padding: 0 0 0 30px;
     }
 
@@ -222,7 +221,7 @@
         overflow: visible;
     } 
 
-    .wrapper {
+    #content {
         padding: 0 10px;
     }
 
