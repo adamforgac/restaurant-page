@@ -67,7 +67,7 @@
     display: grid;
     min-height: 100vh;
     width: min(100%, 1500px);
-    padding: 0 40px;
+    padding: 0;
     display: grid;
     grid-template-rows: 100px auto;
     background: url(images/back3.jpg);
@@ -75,6 +75,10 @@
     background-repeat: no-repeat;
     background-position: center;
     align-items: normal;
+ }
+
+ #content > div {
+    /* border: 2px solid red; */
  }
 
 
@@ -87,6 +91,7 @@
     padding: 0px 5%;
     height: 100%;
     width: 100%;
+    border-bottom: none;
  }
 
  .nav > div {
