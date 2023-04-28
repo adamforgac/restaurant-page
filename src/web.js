@@ -41,15 +41,29 @@ function initializeWeb() {
     const options = document.querySelector(".options");
     const search = document.querySelector(".search");
 
+    addDiv(options, "marker")
     addDiv(options, "logo");
     addDiv(options, "opt1");
     addDiv(options, "opt2");
     addDiv(options, "opt3");
 
+    const marker = document.querySelector(".marker");
+    const allItems = document.querySelectorAll(".opt1, .opt2, .opt3");
     const logo = document.querySelector(".logo");
     const opt1 = document.querySelector(".opt1");
     const opt2 = document.querySelector(".opt2");
     const opt3 = document.querySelector(".opt3");
+
+    function indicator(e) {
+        marker.style.left = e.offsetLeft+"px";
+        marker.style.width = e.offsetWidth+"px";
+    }
+
+    allItems.forEach(link => {
+        link.addEventListener("click", (e) => {
+            indicator(e.target);
+        })
+    })
 
     logo.appendChild(document.createElement("i"));
     logo.querySelector("i").classList.add("fa-solid");

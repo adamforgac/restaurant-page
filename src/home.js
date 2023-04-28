@@ -34,6 +34,7 @@ function createHome() {
     document.querySelector(".opt1 p").style.color = "black";
     document.querySelector(".opt2 p").style.color = "black";
     document.querySelector(".opt3 p").style.color = "black";
+    document.querySelector(".marker").style.background = "black";
 
     addDiv(restPage, "main");
     addDiv(restPage, "footer");

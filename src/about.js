@@ -32,6 +32,8 @@ function createAbout() {
     document.querySelector(".opt1 p").style.color = "white";
     document.querySelector(".opt2 p").style.color = "white";
     document.querySelector(".opt3 p").style.color = "white";
+    document.querySelector(".marker").style.background = "white";
+
 
     addDiv(restPage, "about-body");
     const main = document.querySelector(".about-body");

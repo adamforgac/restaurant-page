@@ -17,19 +17,16 @@ const content = document.querySelector("#content")
 home.addEventListener("click", () => {
     restPage.innerHTML = "";
     createHome()
-    console.log("works")
 })
 
 menu.addEventListener("click", () => {
     restPage.innerHTML = "";
     createMenu();
-    console.log("works")
 })
 
 about.addEventListener("click", () => {
     restPage.innerHTML = "";
     createAbout();
-    console.log("works")
 })
 
 

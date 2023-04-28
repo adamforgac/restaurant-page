@@ -6,6 +6,9 @@ function createMenu() {
     content.style.backgroundPosition = "center";
     content.style["align-items"] = "center";
 
+    const nav = document.querySelector(".nav");
+    nav.style.borderBottom = "1px solid white";
+
 
     function addDiv(newParent, newClass) {
         const div = document.createElement("div");
@@ -24,6 +27,7 @@ function createMenu() {
     document.querySelector(".opt1 p").style.color = "white";
     document.querySelector(".opt2 p").style.color = "white";
     document.querySelector(".opt3 p").style.color = "white";
+    document.querySelector(".marker").style.background = "white";
 
     addDiv(restPage, "menu-list");
     const main = document.querySelector(".menu-list");
